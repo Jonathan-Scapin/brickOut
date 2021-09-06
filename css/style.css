@@ -1,0 +1,58 @@
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{text-decoration: none;}
+#wrapper {
+    position: relative;
+    width: 480px;
+    height: 320px;
+}
+
+#menu {
+    position: absolute;
+    background-color: lightcoral;
+    width: 480px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    text-align: center;
+}
+#main h1{
+    color: white;
+}
+#main li{
+    background-color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
+    border-radius: 5px;
+}
+#main li:hover{
+    cursor: pointer;
+}
+#main a{
+    color: darkgreen;
+}
+
+#game-over, #winner{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    text-align: center;
+}
+
+#game-over a, #winner a{
+    background-color: lightcoral;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
+    border-radius: 5px;
+}

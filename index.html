@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="menu" class="main">
+            <div id="main">
+                <h1>brickOut</h1>
+                <ul>
+                    <li><a href="#" id="play" onclick="startGame()">Start Game</a></li>
+                    <li><a href="#" id="credits">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+        <canvas id="canvas" width="480" height="320">
+            <p>You're browser does not support the required functionality to play this game.</p>
+            <p>Please update to a modern browser such as <a href="www.google.com/chrome/‎">Google Chrome</a> to play.
+            </p>
+        </canvas>
+        <div id="winner">
+            <h2>You are winner !!!!</h2>
+            <h3>You score : <span id="scoreW"></span></h3>
+            <a href="#" onclick="restartGame()" id="retry">Try again?</a>
+        </div>
+        <div id="game-over">
+            <h2>You score : <span id="scoreGO"></span></h2>
+            <a href="#" onclick="restartGame()" id="retry">Try again?</a>
+        </div>
+    </div>
+
+    <script src="scripts/ball.js"></script>
+    <script src="scripts/paddle.js"></script>
+    <script src="scripts/bricks.js"></script>
+    <script src="scripts/interfaces.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
