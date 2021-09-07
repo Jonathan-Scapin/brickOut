@@ -1,58 +1,83 @@
-ul{
-    list-style: none;
-    padding: 0;
+a {
+    text-decoration: none;
 }
 
-a{text-decoration: none;}
 #wrapper {
     position: relative;
-    width: 480px;
-    height: 320px;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+#canvas {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 #menu {
     position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: lightcoral;
-    width: 480px;
-    height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#main{
+#main {
     text-align: center;
 }
-#main h1{
+
+#main h1 {
     color: white;
 }
-#main li{
+
+#main li {
     background-color: white;
     padding: 0.5rem;
     margin-bottom: 0.2rem;
     border-radius: 5px;
 }
-#main li:hover{
+
+#main li:hover {
     cursor: pointer;
 }
-#main a{
+
+#main a {
     color: darkgreen;
 }
 
-#game-over, #winner{
+#game-over,
+#winner {
     display: none;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 200px;
     text-align: center;
 }
 
-#game-over a, #winner a{
+#game-over a,
+#winner a {
     background-color: lightcoral;
     color: white;
     padding: 0.5rem;
     margin-bottom: 0.2rem;
     border-radius: 5px;
+}
+
+@media screen and (min-width: 640px) {
+    #wrapper {
+        position: relative;
+        max-width: 100%;
+        width: 480px;
+        height: 320px;
+    }
+
+    #canvas {
+        width: 480px;
+        height: 320px;
+    }
 }
